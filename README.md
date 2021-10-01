@@ -537,7 +537,7 @@ Depending on the proximity of your reference, you can play with the following pa
 1. install entrez-direct utilities (instructions [here](https://www.ncbi.nlm.nih.gov/books/NBK179288/), or using `conda -c bioconda entrez-direct`)
 2. use the following in a shell to batch download all mitochondrial genomes associated with Lepidoptera:
 ```sh
-taxa=Lepidoptera 
+taxa=Carnivora 
 esearch -db nuccore -query "\"mitochondrion\"[All Fields] AND (\"${taxa}\"[Organism]) AND (refseq[filter] AND mitochondrion[filter] AND (\"12000\"[SLEN] : \"20000\"[SLEN]))" | efetch -format gbwithparts > reference.gb
 ```
 
